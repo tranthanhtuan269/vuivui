@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/login', [HomeController::class, 'login'])->name('home.login'); 
+Route::post('/api/login', [HomeController::class, 'login'])->name('home.login'); 
 
 Route::get('/dashboard', function () {
     return view('dashboard');
